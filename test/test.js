@@ -22,7 +22,7 @@ const drums = {
   }
 };
 
-describe.only('Beat Mix Problem Set - script.js file', () => {
+describe('Beat Mix Problem Set - script.js file', () => {
 
   let drumArrays;
   let code;
@@ -311,7 +311,7 @@ describe.only('Beat Mix Problem Set - script.js file', () => {
 
 });
 
-describe('Preset function - presetHandler.js file', () => {
+describe.only('Preset function - presetHandler.js file', () => {
 
   let presets = require('../presets');
   const presetHandler = require('../presetHandler');

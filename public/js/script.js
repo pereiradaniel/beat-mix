@@ -2,7 +2,7 @@
 
   // Drum Arrays:
   
-  // Quattro variabili per rappresentare gli array di drum pad. Questi array prendono il nome dalla batteria che rappresentano: kicks, snares, hiHats, rideCymbals. Questi array dovrebbero avere tutti una lunghezza di 16 e essere riempiti con false.
+  // Quattro variabili per rappresentare gli array di drum pad.  Questi array prendono il nome dalla batteria che rappresentano: kicks, snares, hiHats, rideCymbals.  Questi array dovrebbero avere tutti una lunghezza di 16 e essere riempiti con false.
 
   // Questa funzione restituisce una matrice che viene utilizzata per inizializzare le variabili per i Drum Array.
   const createEmptyDrumArray = () => new Array(16).fill(false);
@@ -29,7 +29,7 @@
 
   // toggleDrum() function:
   
-  // una funzione chiamata toggleDrum che accetta due argomenti: una stringa che rappresenta il nome dell'array ('kicks', 'snares', 'hiHats' o 'rideCymbals') e un numero di indice. Questa funzione dovrebbe capovolgere il valore booleano nell'array corretto all'indice specificato.
+  // una funzione chiamata toggleDrum che accetta due argomenti: una stringa che rappresenta il nome dell'array ('kicks', 'snares', 'hiHats' o 'rideCymbals') e un numero di indice.  Questa funzione dovrebbe capovolgere il valore booleano nell'array corretto all'indice specificato.
 
     // Questa funzione verrà utilizzata da toggleDrum () per ottenere il drum array in base al nome.
     const getDrumArrayByName = (name) => {
