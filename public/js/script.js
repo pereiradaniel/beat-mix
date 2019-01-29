@@ -106,4 +106,34 @@
   for (let i = 0; i < drums.length; i++) {
     drums[i] = !drums[i];
   }
-};
+}
+
+
+// Test Unitario:  BONUS:  getNeighborPads() function
+
+  // Una funzione chiamata 'getNeighborPads()' che accetta un parametro x, ye una dimensione.  Nell'applicazione, questi valori si riferiscono alla griglia synth: x e y sono indicizzati a zero dalla parte inferiore sinistra della griglia e la dimensione è un numero che rappresenta il numero di righe / colonne nel quadrato.  'getNeighborPads()' dovrebbe restituire una matrice di vicini, ognuno nella forma [xValore, yValore].  I vicini sono i quadrati immediatamente a sinistra, a destra, sopra e sotto la posizione della griglia.
+
+
+  // 1) should exist and be a function
+  const getNeighborPads = (x, y, size) => {
+    // 2) should return an array
+    const neighborPads = [];
+    if (x >= size || y >= size || x < 0 || y < 0 || size < 1) {
+      // 3) should return an empty array when called with an x or y argument outside the size range
+      return neighborPads;
+    }
+  
+    // 4) should return an array of four neighbor locations when called with a valid input
+    // 5) should only return two neighbors when called with a location in a corner of the grid
+    // 6) should only return three neighbors when called with a location on the edge of the grid
+    neighborPads.push([x - 1, y]);
+    neighborPads.push([x, y - 1]);
+    neighborPads.push([x + 1, y]);
+    neighborPads.push([x, y + 1]);
+    
+    return neighborPads.filter((neighbor) => {
+      return neighbor.every((val) => {
+        return val >= 0 && val < size;
+      });
+    });
+  };
