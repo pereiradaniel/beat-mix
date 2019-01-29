@@ -22,7 +22,7 @@ const drums = {
   }
 };
 
-describe('Beat Mix Problem Set - script.js file', () => {
+describe.only('Beat Mix Problem Set - script.js file', () => {
 
   let drumArrays;
   let code;
